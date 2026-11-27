@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>鴨嘴獸表哥 2027 合作報價</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700;900&display=swap" rel="stylesheet">
+<style>
+/* VOICE: 表哥本人對廠商講話：短句、直接、數字說話
+   IDEA: 拆開的包裹：牛皮紙箱棕＋膠帶黃，每個方案是一張同尺寸的「開箱卡」
+   PICTURE: 表哥吉祥物＋貼紙數字；每個方案一格 16:9 範例
+   COLOUR and TYPE: 鴨嘴獸棕 dominant、深咖啡、膠帶黃 accent；Noto Sans TC 900/500
+   LAYOUT: hash 分頁：一眼推薦 / 方案與報價 / 授權 / 體驗會 / 頻道數據 */
+:root{color-scheme:light dark;
+--bg:light-dark(#fff,#1b1512);--ink:light-dark(#231b17,#f6ece4);--mute:light-dark(#6f5e54,#bba89b);
+--brown:light-dark(#b0703f,#c98552);--deep:light-dark(#4a2f20,#2a1d16);--soft:light-dark(#f7ece2,#2a201b);
+--line:light-dark(#ead9ca,#3d2f27);--tape:#ffcf3a;--red:#e4322b;--card:light-dark(#fff,#241b17);--frame:light-dark(#efe3d8,#16110e)}
+:root[data-theme=light]{color-scheme:light}:root[data-theme=dark]{color-scheme:dark}
+*{box-sizing:border-box;min-width:0}
+body{margin:0;background:var(--bg);color:var(--ink);font:17px/1.6 "Noto Sans TC","PingFang TC","Microsoft JhengHei",sans-serif;overflow-x:clip}
+a{color:inherit}img{max-width:100%;display:block}
+h1,h2,h3{line-height:1.12;text-wrap:balance;margin:0;font-weight:900}
+h2{font-size:clamp(28px,4vw,44px)}h3{font-size:22px}p{margin:.4em 0}
+.band{padding:clamp(32px,5vw,72px) max(5vw,16px)}.wrap{max-width:1240px;margin:0 auto}
+.scroll{overflow-x:auto}html{scroll-padding-top:72px}
+.soft{background:var(--soft)}.dark{background:var(--deep);color:#fff}
+.sub{color:var(--mute);margin-top:8px}.dark .sub{color:#e8d6c8}
+.note{font-size:13px;color:var(--mute);margin-top:12px}.dark .note{color:#d7c2b2}
+header{position:sticky;top:0;z-index:9;background:var(--deep);color:#fff}
+.nav{max-width:1240px;margin:0 auto;display:flex;align-items:center;gap:6px;padding:8px max(5vw,16px)}
+.brand{font-weight:900;font-size:18px;margin-right:auto;text-decoration:none;white-space:nowrap}.brand b{color:var(--tape)}
+.tabs{display:flex;gap:2px;overflow-x:auto;scrollbar-width:none}
+.tabs a{flex:none;text-decoration:none;padding:10px 12px;border-radius:999px;font-weight:700;font-size:15px;min-height:44px;display:flex;align-items:center}
+.tabs a[aria-current]{background:var(--tape);color:#231b17}
+a:focus-visible,button:focus-visible{outline:3px solid var(--tape);outline-offset:2px}
+@media(max-width:760px){.nav{flex-wrap:wrap}.tabs{width:100%}}
+.view{display:none}.view.on{display:block}
+.btn{display:inline-flex;align-items:center;min-height:48px;padding:0 20px;border-radius:12px;text-decoration:none;background:#231b17;color:#fff;border:0;cursor:pointer;font:inherit;font-weight:900}
+.btn.y{background:var(--tape);color:#231b17}.btn.o{background:transparent;border:2px solid currentColor}
+.cta{display:flex;flex-wrap:wrap;gap:10px;margin-top:22px}
+.new{display:inline-block;background:var(--red);color:#fff;font-size:12px;font-weight:900;border-radius:6px;padding:1px 7px;margin-left:8px;vertical-align:middle;white-space:nowrap}
+/* hero */
+.hero{background:var(--brown);color:#fff;overflow:hidden}
+.hero .wrap{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,.85fr);gap:24px;align-items:center}
+.hero h1{font-size:clamp(46px,7.5vw,92px)}
+.hero h1 em{font-style:normal;background:var(--tape);color:#231b17;padding:0 .12em;border-radius:8px}
+.hero .lead{font-size:clamp(18px,2vw,22px);font-weight:500;margin-top:16px}
+.heroimg{position:relative;aspect-ratio:1}
+.heroimg img{position:absolute;inset:0;width:100%;height:100%;object-fit:contain;filter:drop-shadow(0 18px 30px rgba(40,20,10,.35))}
+.sticker{position:absolute;background:var(--tape);color:#231b17;font-weight:900;border-radius:14px;padding:10px 14px;transform:rotate(-6deg);box-shadow:0 6px 0 rgba(0,0,0,.18);line-height:1.1;text-align:center}
+.sticker big{display:block;font-size:clamp(30px,4vw,44px)}
+.s1{left:0;bottom:16%}.s2{right:2%;bottom:10%;transform:rotate(5deg);background:#fff}
+@media(max-width:700px){.hero .wrap{grid-template-columns:1fr}.heroimg{max-width:340px;width:100%;margin:0 auto;order:-1}}
+/* 5 reasons */
+.reasons{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:12px;margin-top:26px}
+.reason{background:var(--soft);border-radius:18px;padding:20px 18px;display:flex;flex-direction:column;gap:6px}
+.reason .k{font-weight:900;font-size:clamp(32px,3.4vw,44px);line-height:1;color:var(--brown);white-space:nowrap}
+.reason h3{font-size:19px}.reason p{margin:0;color:var(--mute);font-size:15px}
+@media(max-width:1000px){.reasons{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:520px){.reasons{grid-template-columns:1fr}}
+/* 7 outputs */
+.seven{display:grid;grid-template-columns:repeat(7,minmax(0,1fr));gap:8px;margin-top:22px}
+.tile{border-radius:14px;padding:14px 10px;text-align:center;font-weight:700;font-size:14px;line-height:1.3;color:#fff}
+.tile b{display:block;font-size:18px;margin-bottom:4px}
+.tile.l{background:var(--deep)}.tile.s{background:var(--brown)}.tile.b{background:var(--tape);color:#231b17}
+.legend{display:flex;flex-wrap:wrap;gap:16px;margin-top:12px;font-size:14px;font-weight:700}
+.legend i{display:inline-block;width:14px;height:14px;border-radius:4px;margin-right:6px;vertical-align:-2px}
+@media(max-width:820px){.seven{grid-template-columns:repeat(2,minmax(0,1fr))}}
+/* uniform example frame */
+.frame{position:relative;aspect-ratio:16/9;border-radius:14px;overflow:hidden;background:var(--frame)}
+.frame>img{width:100%;height:100%;object-fit:contain}
+.frame.cover>img{object-fit:cover}
+.frame .lbl{position:absolute;left:10px;top:10px;background:rgba(35,27,23,.82);color:#fff;font-size:12px;font-weight:700;border-radius:6px;padding:2px 8px}
+.frame .play{position:absolute;right:10px;bottom:10px;width:40px;height:28px;border-radius:8px;background:var(--red)}
+.frame .play::after{content:"";position:absolute;left:16px;top:8px;border-left:11px solid #fff;border-top:6px solid transparent;border-bottom:6px solid transparent}
+.mock{position:absolute;inset:0;display:grid;place-items:center;padding:14px}
+.mock.ai{background:linear-gradient(135deg,#2b1b3a,#4a2f20 55%,#b0703f);color:#fff;text-align:center}
+.mock.ai b{font-size:clamp(40px,6vw,64px);line-height:1;display:block}
+.mock.ai span{font-weight:700;font-size:14px;opacity:.9}
+.langs{position:absolute;left:10px;right:10px;bottom:10px;display:flex;flex-wrap:wrap;gap:6px}
+.langs span{background:var(--tape);color:#231b17;font-weight:900;font-size:13px;border-radius:6px;padding:2px 8px}
+.chat{background:var(--card);color:var(--ink);border-radius:12px;padding:10px 12px;width:min(100%,360px);font-size:13px;line-height:1.45;box-shadow:0 6px 20px rgba(0,0,0,.12)}
+.chat .who{font-size:11px;color:var(--mute)}.chat .a{margin-top:6px;padding:8px;border-radius:8px;background:var(--soft)}
+.chat .lnk{color:#1d6fe0;font-weight:700}
+/* plan cards */
+.plans{display:grid;grid-template-columns:repeat(auto-fill,minmax(270px,1fr));gap:16px;margin-top:24px}
+.plan{display:flex;flex-direction:column;gap:10px;background:var(--card);border:2px solid var(--line);border-radius:20px;padding:12px;text-decoration:none}
+.plan:hover{border-color:var(--brown)}
+.plan .row{display:flex;justify-content:space-between;align-items:baseline;gap:8px;padding:0 4px}
+.plan h3{font-size:19px}.plan .p{font-weight:900;font-size:22px;white-space:nowrap}
+.plan .p small{font-size:12px;color:var(--mute);margin-left:2px;font-weight:500}
+.plan .chat{font-size:11px;padding:7px 9px;width:92%}.plan .chat .a{padding:5px;margin-top:4px}.plan .mock{padding:8px}
+.soft .btn.o{color:var(--ink)}
+.plan.hot{border-color:var(--tape);border-width:3px;position:relative}
+.ribbon{align-self:flex-start;background:var(--tape);color:#231b17;font-weight:900;font-size:13px;border-radius:8px;padding:3px 10px}
+.gift{margin-top:18px;background:var(--deep);color:#fff;border-radius:18px;padding:18px}
+.gh{font-weight:900;font-size:clamp(22px,2.6vw,28px)}.gh em{font-style:normal;color:var(--tape)}
+.gg{display:grid;grid-template-columns:minmax(0,1fr) auto minmax(0,1fr) auto minmax(0,1fr);gap:8px;align-items:stretch;margin-top:14px}
+.gi{background:var(--tape);color:#231b17;border-radius:14px;padding:12px;display:flex;flex-direction:column;gap:2px}
+.gi.paid{background:rgba(255,255,255,.12);color:#fff}
+.gi b{font-size:19px;font-weight:900}.gi small{font-size:12px;opacity:.85;line-height:1.35}
+.gt{font-size:12px;font-weight:900;align-self:flex-start;border-radius:6px;padding:0 6px;background:#231b17;color:var(--tape)}
+.gi.paid .gt{background:#fff;color:#231b17}
+.plus{display:flex;align-items:center;font-weight:900;font-size:22px;color:var(--tape)}
+.gn{margin:12px 0 0;font-weight:700;color:var(--tape)}
+@media(max-width:600px){.gg{grid-template-columns:1fr}.plus{justify-content:center;font-size:18px;line-height:1}}
+
+.reason{position:relative;padding-top:56px}.reason .rm{position:absolute;right:10px;top:-34px;width:84px;filter:drop-shadow(0 6px 8px rgba(60,30,10,.18))}
+.reasons{margin-top:46px;row-gap:42px}
+.hrow{display:flex;align-items:center;justify-content:space-between;gap:16px}.hrow>img{width:clamp(80px,10vw,120px);flex:none}
+.plan{position:relative}.plan .pm{position:absolute;right:-10px;top:-22px;width:68px;z-index:2;filter:drop-shadow(0 4px 6px rgba(60,30,10,.2));transition:transform .2s}
+.plan:hover .pm{transform:rotate(-8deg) scale(1.08)}
+.plans{row-gap:30px;margin-top:34px}
+.sh{display:flex;align-items:center;gap:12px}.sh img{width:clamp(64px,7vw,88px);flex:none}
+.gift{position:relative}.gift .gm{position:absolute;right:10px;top:-34px;width:84px}
+.addon{position:relative}.addon .am{position:absolute;right:8px;top:-30px;width:64px}
+.heroimg img{animation:bob 4s ease-in-out infinite}@keyframes bob{50%{transform:translateY(-10px)}}
+@media(prefers-reduced-motion:reduce){.heroimg img{animation:none}}
+@media(max-width:520px){.reason .rm{width:70px}}
+footer img{filter:drop-shadow(0 8px 14px rgba(0,0,0,.3))}
+
+.logos{display:grid;grid-template-columns:repeat(auto-fill,minmax(104px,1fr));gap:8px;margin-top:20px}
+.lg{background:var(--soft);border-radius:10px;height:54px;display:grid;place-items:center;padding:10px 12px}
+.lg img{max-width:100%;max-height:20px;object-fit:contain;opacity:.88;transition:opacity .2s,transform .2s}
+.lg:hover img{opacity:1;transform:scale(1.06)}
+:root[data-theme=dark] .lg img{filter:invert(1)}
+@media(prefers-color-scheme:dark){:root:not([data-theme=light]) .lg img{filter:invert(1)}}
+.more{margin-top:16px}.more summary{cursor:pointer;font-weight:700;min-height:44px;display:flex;align-items:center;color:var(--brown)}
+.more p{color:var(--mute);line-height:1.9;font-size:15px}
+.contact{background:var(--brown);color:#fff}.contact .sub{color:#fbeee3}
+.contact .hrow>img{width:clamp(90px,12vw,140px)}
+.mail{display:flex;flex-wrap:wrap;gap:10px;margin-top:20px}.mail .btn.o{color:#fff}
+.tabs a.navcta{background:#fff;color:#231b17;margin-left:4px}
+.tabs a.navcta[aria-current]{background:var(--tape)}
+@media(max-width:600px){.logos{grid-template-columns:repeat(3,minmax(0,1fr))}.lg{height:48px}}
+.plan p{margin:0 4px 4px;color:var(--mute);font-size:15px}
+/* services */
+.svc{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:clamp(20px,4vw,56px);padding:clamp(32px,4vw,56px) 0;border-bottom:2px dashed var(--line);align-items:start}
+.svc:last-child{border-bottom:0}
+.svc .price{font-size:clamp(36px,4.4vw,50px);font-weight:900;line-height:1.1;margin:12px 0 6px;white-space:nowrap}
+.svc .price small{font-size:16px;color:var(--mute);margin-left:6px;font-weight:500}
+.svc .tagline{font-size:20px;font-weight:700}
+.pts{list-style:none;padding:0;margin:14px 0 0;display:grid;gap:8px}
+.pts li{padding-left:28px;position:relative}
+.pts li::before{content:"";position:absolute;left:0;top:.45em;width:16px;height:16px;border-radius:5px;background:var(--tape)}
+.tiers{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;margin-top:14px}
+.tiers div{background:var(--soft);border-radius:14px;padding:14px}
+.tiers b{display:block;font-size:26px;font-weight:900;white-space:nowrap}
+.addon{margin-top:18px;border:2px solid var(--tape);border-radius:16px;padding:16px;background:light-dark(#fffaea,#2c2414)}
+.addon h3{font-size:19px}.addon .new{margin-left:6px}
+.links{display:flex;flex-wrap:wrap;gap:8px;margin-top:12px}
+.links a{font-size:14px;font-weight:700;text-decoration:none;background:var(--card);border:2px solid var(--line);border-radius:10px;padding:8px 12px;min-height:44px;display:inline-flex;align-items:center}
+.links a:hover{border-color:var(--brown)}
+.exs{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+.exs .one{grid-column:1/-1}
+@media(max-width:820px){.svc{grid-template-columns:1fr}.tiers{grid-template-columns:1fr}}
+table{border-collapse:collapse;width:100%;font-size:15px}
+th,td{text-align:left;padding:10px 12px;border-bottom:1px solid var(--line);vertical-align:top}
+th{font-size:13px;color:var(--mute);font-weight:700;white-space:nowrap}
+td.r,th.r{text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums}
+.strike{text-decoration:line-through;color:var(--mute);margin-right:6px}
+.lic{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}
+.lic>div{background:var(--card);border:2px solid var(--line);border-radius:18px;padding:16px}
+@media(max-width:900px){.lic{grid-template-columns:1fr}}
+.gal{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px;margin-top:20px}
+@media(max-width:700px){.gal{grid-template-columns:1fr}}
+.facts{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px;margin-top:16px}
+.facts div{background:var(--soft);border-radius:14px;padding:14px}.facts b{display:block;font-size:20px}
+/* channel */
+.kpis{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin-top:20px}
+.kpis div{background:rgba(255,255,255,.08);border-radius:16px;padding:16px 18px}
+.kpis b{display:block;font-size:clamp(30px,4vw,46px);color:var(--tape);line-height:1.1;font-variant-numeric:tabular-nums;white-space:nowrap}
+@media(max-width:700px){.kpis{grid-template-columns:1fr}}
+.aud{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.4fr) minmax(0,1fr);gap:16px;margin-top:20px}
+.aud>div{background:var(--card);border:2px solid var(--line);border-radius:18px;padding:18px}
+.aud h3{font-size:18px;margin-bottom:12px}
+@media(max-width:900px){.aud{grid-template-columns:1fr}}
+.split{display:flex;height:38px;border-radius:10px;overflow:hidden;font-weight:900;font-size:14px;color:#fff}
+.split span{display:flex;align-items:center;justify-content:center}
+.hb{display:grid;grid-template-columns:72px minmax(0,1fr) 52px;gap:8px;align-items:center;font-size:14px;margin:6px 0}
+.hb .t{height:14px;background:var(--soft);border-radius:7px;overflow:hidden}.hb .t i{display:block;height:100%;background:var(--brown);border-radius:7px}
+.hb .v{text-align:right;font-weight:700;font-variant-numeric:tabular-nums}
+.pending{border:2px dashed var(--brown);border-radius:18px;padding:22px;margin-top:20px;color:var(--mute)}
+.ctrl{display:flex;flex-wrap:wrap;gap:10px;align-items:center}
+.seg{display:inline-flex;background:var(--soft);border-radius:12px;padding:4px;gap:4px}
+.seg button{border:0;background:transparent;font:inherit;font-weight:700;padding:8px 14px;border-radius:9px;min-height:40px;cursor:pointer;color:var(--ink);font-size:15px}
+.seg button[aria-pressed=true]{background:var(--brown);color:#fff}
+.rk{margin-top:18px;display:grid;gap:6px}
+.bar{display:grid;grid-template-columns:44px minmax(0,1fr) auto;gap:12px;align-items:center;padding:10px 14px;border-radius:12px;background:var(--card);border:1px solid var(--line);text-decoration:none}
+.bar:hover{border-color:var(--brown)}
+.bar .no{font-weight:900;font-size:20px;color:var(--brown);text-align:center}
+.bar .tt{font-weight:700;font-size:15px;line-height:1.35;overflow:hidden;white-space:nowrap;text-overflow:ellipsis}
+.bar .track{height:8px;border-radius:4px;background:var(--soft);margin-top:6px;overflow:hidden}.bar .track i{display:block;height:100%;background:var(--brown)}
+.bar .num{text-align:right;font-weight:900;font-variant-numeric:tabular-nums;white-space:nowrap}
+.bar .num small{display:block;font-weight:500;font-size:12px;color:var(--mute)}
+.badge{display:inline-block;font-size:11px;font-weight:900;border-radius:5px;padding:0 6px;margin-right:6px;color:#fff;background:var(--red);vertical-align:2px}.badge.s{background:#231b17}
+@media(max-width:560px){.bar{grid-template-columns:34px minmax(0,1fr)}.bar .num{grid-column:2;text-align:left}.bar .num small{display:inline;margin-left:6px}.bar .tt{white-space:normal}}
+footer{background:var(--deep);color:#fff}
+footer .wrap{display:grid;grid-template-columns:minmax(0,1fr) 200px;gap:20px;align-items:center}
+footer img{width:180px}footer .links a{color:var(--ink)}
+@media(max-width:640px){footer .wrap{grid-template-columns:1fr}footer img{width:140px}}
+@media(prefers-reduced-motion:no-preference){.view.on{animation:up .35s ease}@keyframes up{from{opacity:0;transform:translateY(8px)}}}
+@media(max-width:600px){table{font-size:13px}.stack thead{display:none}.stack tr{display:grid;padding-block:10px;border-bottom:1px solid var(--line)}.stack td{display:flow-root;border:0;padding:3px 0;padding-inline-start:6.5em;text-align:start}.stack td::before{content:attr(data-l);float:inline-start;width:6em;margin-inline-start:-6.5em;white-space:normal;color:var(--mute);font-size:12px}.stack td:empty{display:none}}
+</style>
+<script>new MutationObserver(()=>{for(const c of document.querySelectorAll('.stack td:not([data-l])')){let i=0,p=c;while(p=p.previousElementSibling)i+=p.colSpan;c.dataset.l=c.closest('table').rows[0].cells[i]?.textContent||''}}).observe(document,{childList:true,subtree:true})</script>
+</head>
+<body>
+<header><nav class="nav" aria-label="主選單">
+<a class="brand" href="#home">鴨嘴獸表哥 <b class="yr">2027</b></a>
+<div class="tabs" id="tabs"><a href="#home">一眼推薦</a><a href="#plans">方案與報價</a><a href="#license">授權</a><a href="#event">產品體驗會</a><a href="#channel">頻道數據</a><a href="#contact" class="navcta">合作洽詢</a></div>
+</nav></header>
+
+<main>
+<section class="view" id="v-home">
+<div class="band hero"><div class="wrap">
+<div>
+<h1>拍一次，<br>曝光 <em>7 次</em>。</h1>
+<p class="lead">2 天出腳本・7 天交片・5 大平台同步上架。</p>
+<div class="cta"><a class="btn y" href="#plans">看方案與報價</a><a class="btn o" href="#channel">看頻道數據</a></div>
+</div>
+<div class="heroimg"><img src="img/m/cheer.webp" alt="鴨嘴獸表哥吉祥物">
+<div class="sticker s1"><big>2 天</big>出腳本</div><div class="sticker s2"><big>7 天</big>交 A copy</div></div>
+</div></div>
+
+<div class="band"><div class="wrap">
+<h2>跟表哥合作，你會得到</h2>
+<div class="reasons">
+<div class="reason"><img class="rm" src="img/m/drive.webp" alt=""><span class="k">2+7 天</span><h3>比別人快</h3><p>收到商品 2 天出腳本，確認後 7 天交片。</p></div>
+<div class="reason"><img class="rm" src="img/m/boxopen.webp" alt=""><span class="k">3 合 1</span><h3>長片＋短片＋文章</h3><p>開箱長片之外，精華短片、SEO 文章一起給。</p></div>
+<div class="reason"><img class="rm" src="img/m/spot.webp" alt=""><span class="k">7 個</span><h3>拍一次曝光 7 次</h3><p>長片 ×2、短片 ×4、文章 ×1。</p></div>
+<div class="reason"><img class="rm" src="img/m/phone.webp" alt=""><span class="k">每天</span><h3>每天回留言</h3><p>你想強調的重點，優先回。</p></div>
+<div class="reason"><img class="rm" src="img/m/laptop.webp" alt=""><span class="k">海巡</span><h3>主動找客人</h3><p>別人的問題，變成你的曝光。</p></div>
+</div>
+</div></div>
+
+<div class="band"><div class="wrap">
+<div class="hrow"><div><h2>合作過的品牌</h2><p class="sub">127 個以上品牌，從國際大廠到台灣新創。</p></div><img src="img/m/like.webp" alt=""></div>
+<div class="logos"><div class="lg"><img src="img/logo/lg.webp" alt="LG" title="LG" loading="lazy"></div><div class="lg"><img src="img/logo/philips.webp" alt="Philips 飛利浦" title="Philips 飛利浦" loading="lazy"></div><div class="lg"><img src="img/logo/roborock.webp" alt="Roborock 石頭科技" title="Roborock 石頭科技" loading="lazy"></div><div class="lg"><img src="img/logo/electrolux.webp" alt="Electrolux 伊萊克斯" title="Electrolux 伊萊克斯" loading="lazy"></div><div class="lg"><img src="img/logo/sansui.webp" alt="SANSUI 山水" title="SANSUI 山水" loading="lazy"></div><div class="lg"><img src="img/logo/brita.webp" alt="BRITA" title="BRITA" loading="lazy"></div><div class="lg"><img src="img/logo/asus.webp" alt="ASUS" title="ASUS" loading="lazy"></div><div class="lg"><img src="img/logo/3m.webp" alt="3M" title="3M" loading="lazy"></div><div class="lg"><img src="img/logo/sharp.webp" alt="SHARP" title="SHARP" loading="lazy"></div><div class="lg"><img src="img/logo/iris.webp" alt="IRIS OHYAMA" title="IRIS OHYAMA" loading="lazy"></div><div class="lg"><img src="img/logo/samsung.webp" alt="SAMSUNG" title="SAMSUNG" loading="lazy"></div><div class="lg"><img src="img/logo/panasonic.webp" alt="Panasonic" title="Panasonic" loading="lazy"></div><div class="lg"><img src="img/logo/toshiba.webp" alt="TOSHIBA" title="TOSHIBA" loading="lazy"></div><div class="lg"><img src="img/logo/hitachi.webp" alt="HITACHI 日立" title="HITACHI 日立" loading="lazy"></div><div class="lg"><img src="img/logo/honeywell.webp" alt="Honeywell" title="Honeywell" loading="lazy"></div><div class="lg"><img src="img/logo/ge.webp" alt="GE Appliances" title="GE Appliances" loading="lazy"></div><div class="lg"><img src="img/logo/tefal.webp" alt="Tefal 特福" title="Tefal 特福" loading="lazy"></div><div class="lg"><img src="img/logo/logitech.webp" alt="Logitech 羅技" title="Logitech 羅技" loading="lazy"></div><div class="lg"><img src="img/logo/heran.webp" alt="HERAN 禾聯" title="HERAN 禾聯" loading="lazy"></div><div class="lg"><img src="img/logo/whirlpool.webp" alt="Whirlpool 惠而浦" title="Whirlpool 惠而浦" loading="lazy"></div><div class="lg"><img src="img/logo/jbl.webp" alt="JBL" title="JBL" loading="lazy"></div><div class="lg"><img src="img/logo/coolermaster.webp" alt="Cooler Master" title="Cooler Master" loading="lazy"></div><div class="lg"><img src="img/logo/optoma.webp" alt="Optoma 奧圖碼" title="Optoma 奧圖碼" loading="lazy"></div><div class="lg"><img src="img/logo/iflytek.webp" alt="iFLYTEK 科大訊飛" title="iFLYTEK 科大訊飛" loading="lazy"></div><div class="lg"><img src="img/logo/eufy.webp" alt="eufy" title="eufy" loading="lazy"></div><div class="lg"><img src="img/logo/teco.webp" alt="TECO 東元" title="TECO 東元" loading="lazy"></div><div class="lg"><img src="img/logo/medisana.webp" alt="medisana" title="medisana" loading="lazy"></div><div class="lg"><img src="img/logo/bosch.webp" alt="BOSCH" title="BOSCH" loading="lazy"></div><div class="lg"><img src="img/logo/msi.webp" alt="MSI" title="MSI" loading="lazy"></div><div class="lg"><img src="img/logo/yale.webp" alt="Yale 耶魯" title="Yale 耶魯" loading="lazy"></div><div class="lg"><img src="img/logo/haier.webp" alt="Haier 海爾" title="Haier 海爾" loading="lazy"></div><div class="lg"><img src="img/logo/karcher.webp" alt="KÄRCHER 凱馳" title="KÄRCHER 凱馳" loading="lazy"></div><div class="lg"><img src="img/logo/jura.webp" alt="JURA" title="JURA" loading="lazy"></div><div class="lg"><img src="img/logo/fender.webp" alt="Fender" title="Fender" loading="lazy"></div><div class="lg"><img src="img/logo/oralb.webp" alt="Oral-B" title="Oral-B" loading="lazy"></div><div class="lg"><img src="img/logo/braun.webp" alt="BRAUN 百靈" title="BRAUN 百靈" loading="lazy"></div><div class="lg"><img src="img/logo/colgate.webp" alt="Colgate 高露潔" title="Colgate 高露潔" loading="lazy"></div><div class="lg"><img src="img/logo/siroca.webp" alt="siroca" title="siroca" loading="lazy"></div><div class="lg"><img src="img/logo/coway.webp" alt="Coway" title="Coway" loading="lazy"></div><div class="lg"><img src="img/logo/keychron.webp" alt="Keychron" title="Keychron" loading="lazy"></div><div class="lg"><img src="img/logo/benq.webp" alt="BenQ" title="BenQ" loading="lazy"></div><div class="lg"><img src="img/logo/tatung.webp" alt="TATUNG 大同" title="TATUNG 大同" loading="lazy"></div><div class="lg"><img src="img/logo/kolin.webp" alt="Kolin 歌林" title="Kolin 歌林" loading="lazy"></div><div class="lg"><img src="img/logo/americantourister.webp" alt="American Tourister" title="American Tourister" loading="lazy"></div><div class="lg"><img src="img/logo/daewoo.webp" alt="DAEWOO" title="DAEWOO" loading="lazy"></div><div class="lg"><img src="img/logo/skyworth.webp" alt="SKYWORTH 創維" title="SKYWORTH 創維" loading="lazy"></div><div class="lg"><img src="img/logo/aiwa.webp" alt="AIWA" title="AIWA" loading="lazy"></div><div class="lg"><img src="img/logo/sodastream.webp" alt="SodaStream" title="SodaStream" loading="lazy"></div><div class="lg"><img src="img/logo/earfun.webp" alt="EarFun" title="EarFun" loading="lazy"></div><div class="lg"><img src="img/logo/asustor.webp" alt="ASUSTOR" title="ASUSTOR" loading="lazy"></div></div>
+<details class="more"><summary>以及更多品牌（77）</summary><p>雲鯨 Narwal・千石阿拉丁・Revopoint・KOIZUMI・WOKY・萬播 Wanbo・Acerpure・Mio・SimpLite 簡輕家居・普樂 Polar・Rokid・ATEX・Mileseey・XROUND・Morphy Richards 摩飛・Giaretti・CZUR・TiKOBO・小島快鎖・Arpha・POWERRIDER・HOTO・Chiline・cado・九陽 Joyoung・DIKE・IPEVO・one-meter・Glasslock・NEOFLAM・LA NEW・Oclean・Tokdance・UDITER・SWISS STYLE・樂歌 Loctek・Uwant・Fotorgear・CHOZEN・SHARGE・Vinxper・XREAL・睿米 Roidmi・雲米 VIOMI・Thomson・YAMADA・奇美・方太 FOTILE・KINYO・樂扣樂扣・Owala・ReFa・Ultrahuman・Tapo・水星網路・PeariA・GVAST・FlexiSpot・Potensic・Stadler Form・Franklin Sports・PalmGo・SABA・Airmorn・Qualitell・Zipio・Lawaken・KIESLECT・Glolux・drinkmate・OSOTEK 順造・Lydsto・Yeelight・OGAWA・Lisscode・SheerAIRE・Jowua</p></details>
+</div></div>
+
+<div class="band soft"><div class="wrap">
+<div class="hrow"><h2>開箱長片方案，一次拿到 7 個內容</h2><img src="img/m/parcel.webp" alt=""></div>
+<div class="seven">
+<div class="tile l"><b>長片</b>YouTube</div><div class="tile l"><b>長片</b>Facebook</div>
+<div class="tile s"><b>短片</b>YouTube Shorts</div><div class="tile s"><b>短片</b>Facebook Reels</div><div class="tile s"><b>短片</b>Instagram</div><div class="tile s"><b>短片</b>Threads</div>
+<div class="tile b"><b>文章</b>Blog SEO</div>
+</div>
+<div class="legend"><span><i style="background:var(--deep)"></i>7～11 分鐘開箱長片</span><span><i style="background:var(--brown)"></i>60 秒精華直式短片</span><span><i style="background:var(--tape)"></i>部落格文章＋導購按鈕</span></div>
+</div></div>
+
+<div class="band"><div class="wrap">
+<div class="hrow"><div><h2>方案一覽</h2><p class="sub">未稅價。點卡片看詳細內容。</p></div><img src="img/m/ok.webp" alt=""></div>
+<div class="plans" id="plancards"></div>
+</div></div>
+</section>
+
+<section class="view" id="v-plans">
+<div class="band dark"><div class="wrap hrow"><div><h2>方案與報價</h2><p class="sub">全部未稅。每個方案都附實際範例。</p></div><img src="img/m/salute.webp" alt=""></div></div>
+<div class="band"><div class="wrap" id="svclist"></div></div>
+</section>
+
+<section class="view" id="v-license">
+<div class="band dark"><div class="wrap"><div class="hrow"><h2>授權：一次買斷最划算</h2><img src="img/m/trust.webp" alt=""></div>
+<p class="sub">可再製、投廣、肖像、刊登，線上線下都能用。上片前買斷永久授權，<b style="color:var(--tape)">直接半價</b>。</p></div></div>
+<div class="band"><div class="wrap"><div class="lic" id="lic"></div>
+<p class="note">開箱長片附贈的短片與部落格，授權跟著長片走。</p></div></div>
+</section>
+
+<section class="view" id="v-event">
+<div class="band"><div class="wrap">
+<div class="hrow"><h2>產品體驗會：好不好用，讓體驗者說</h2><img src="img/m/hooray.webp" alt=""></div>
+<p class="sub">30,000 元起（未稅），活動影片永久全授權，銷售頁、官網直接用。</p>
+<div class="gal">
+<div class="frame cover"><img src="img/event1.webp" alt="體驗會產品解說" loading="lazy"><span class="lbl">產品解說</span></div>
+<div class="frame cover"><img src="img/event2.webp" alt="體驗會入口布置" loading="lazy"><span class="lbl">現場布置</span></div>
+<div class="frame cover"><img src="img/event3.webp" alt="體驗者與產品互動" loading="lazy"><span class="lbl">體驗者互動</span></div>
+</div>
+<div class="links"><a href="https://youtu.be/gi6ECCNtwmY" target="_blank" rel="noopener">▶ 看 Acerpure 潔吸塔體驗會影片</a></div>
+<div class="scroll" style="margin-top:24px"><table class="stack"><thead><tr><th>項目</th><th class="r">未稅</th><th>內容</th></tr></thead><tbody>
+<tr><td>影片拍攝剪輯</td><td class="r">30,000</td><td>現場紀錄＋體驗者訪問，成品 5～9 分鐘</td></tr>
+<tr><td>產品解說</td><td class="r">10,000</td><td>表哥現場講解、回答提問</td></tr>
+<tr><td>場地租借</td><td class="r">10,000</td><td>場景式家景棚，可容納 30 人</td></tr>
+<tr><td>輸出物</td><td class="r">實報實銷</td><td>場地提供易拉展架</td></tr>
+</tbody></table></div>
+<div class="facts">
+<div><b>完整活動影片</b>永久使用權</div><div><b>採訪橫式＋直式</b>銷售期間隨時用</div><div><b>加碼 10 則好評</b>影片上線後協助體驗者留言</div>
+</div>
+</div></div>
+<div class="band soft"><div class="wrap">
+<h2>場地：南港家景棚</h2>
+<div class="gal">
+<div class="frame cover"><img src="img/venue.webp" alt="場地各區照片" loading="lazy"><span class="lbl">廚房・客廳・房間</span></div>
+<div class="frame"><img src="img/floor.webp" alt="場地平面圖" loading="lazy"><span class="lbl">平面圖</span></div>
+<div class="frame cover"><img src="img/map.webp" alt="場地周邊地圖" loading="lazy"><span class="lbl">位置</span></div>
+</div>
+<div class="facts">
+<div><b>地址</b>台北市南港區南港路一段 186 號</div>
+<div><b>交通</b>南港站、南港展覽館站，步行 8 分鐘</div>
+<div><b>空間</b>5.4m × 11.5m，高 3m，可容納 30 人</div>
+<div><b>停車</b>步行 10 分鐘內有 9 個停車場</div>
+</div>
+</div></div>
+</section>
+
+<section class="view" id="v-channel">
+<div class="band dark"><div class="wrap"><div class="hrow"><h2>頻道數據</h2><img src="img/m/like.webp" alt=""></div>
+<p class="sub" id="updated">讀取中…</p>
+<div class="kpis" id="kpis"></div></div></div>
+<div class="band"><div class="wrap">
+<h2>觀眾輪廓</h2>
+<div id="aud"></div>
+</div></div>
+<div class="band soft"><div class="wrap">
+<h2>熱門影片 Top 20</h2>
+<div class="ctrl" style="margin-top:16px">
+<div class="seg" id="kSeg"><button aria-pressed="true" data-k="v">觀看數</button><button aria-pressed="false" data-k="l">按讚數</button></div>
+<div class="seg" id="tSeg"><button aria-pressed="true" data-k="all">全部</button><button aria-pressed="false" data-k="L">長片</button><button aria-pressed="false" data-k="S">短片</button></div>
+</div>
+<div class="rk" id="rk"></div>
+<div class="cta"><a class="btn o" href="https://www.youtube.com/@Cousin.Platypus" target="_blank" rel="noopener">前往 YouTube 頻道</a></div>
+</div></div>
+</section>
+<section class="band contact" id="contact"><div class="wrap hrow">
+<div><h2>想合作？直接寫信給表哥</h2><p class="sub">附上產品名稱、預計上片時間與想要的方案，表哥會盡快回覆你。</p>
+<div class="mail"><a class="btn y" href="mailto:Platypus.cousin@gmail.com?subject=%E5%90%88%E4%BD%9C%E6%B4%BD%E8%A9%A2">Platypus.cousin@gmail.com</a><button class="btn o" id="copyMail" type="button">複製 Email</button></div></div>
+<img src="img/m/ok.webp" alt="">
+</div></section>
+</main>
+
+<footer class="band"><div class="wrap">
+<div><h2 style="color:var(--tape)"><span class="yr">2027</span>，一起把產品推出去。</h2>
+<p>—— 你的好朋友 鴨嘴獸表哥</p>
+<div class="links"><a href="https://www.youtube.com/@Cousin.Platypus" target="_blank" rel="noopener">YouTube</a><a href="https://www.threads.com/@cousin.platypus" target="_blank" rel="noopener">Threads</a><a href="https://platypus.tw" target="_blank" rel="noopener">部落格 platypus.tw</a><a href="mailto:Platypus.cousin@gmail.com">Platypus.cousin@gmail.com</a></div></div>
+<img src="img/m/bye.webp" alt="表哥揮手再見">
+</div></footer>
+
+<script>
+{
+/* 每年只要改這一行 */
+const YEAR=2027;
+document.title='鴨嘴獸表哥 '+YEAR+' 合作報價';
+const esc=s=>String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const fmt=n=>Number(n).toLocaleString('zh-TW');
+const yt=(id,t)=>t==='S'?'https://youtube.com/shorts/'+id:'https://youtu.be/'+id;
+
+/* one example frame, same 16:9 size everywhere */
+const F={
+ long:`<div class="frame cover"><img src="img/long-thumb.webp" alt="Acerpure 潔吸塔開箱長片" loading="lazy"><span class="lbl">開箱長片</span><span class="play"></span></div>`,
+ short:`<div class="frame"><img src="img/short.webp" alt="情境短影音" loading="lazy"><span class="lbl">情境短影音</span><span class="play"></span></div>`,
+ blog:`<div class="frame cover"><img src="img/blog.webp" alt="部落格文章" loading="lazy" style="object-position:top"><span class="lbl">部落格文章</span></div>`,
+ lang:`<div class="frame cover"><img src="img/long-thumb.webp" alt="多國語言版本示意" loading="lazy"><span class="lbl">示意</span><div class="langs"><span>English</span><span>日本語</span><span>한국어</span></div></div>`,
+ ai:`<div class="frame"><div class="mock ai"><div><b>AI</b><span>直式 60 秒・劇情＋角色＋製作</span></div></div><span class="lbl">示意</span></div>`,
+ patrol:`<div class="frame"><div class="mock" style="background:var(--frame)"><div class="chat"><div class="who">網友提問</div>想買吸塵器，自動集塵的好用嗎？<div class="a"><div class="who">@cousin.platypus</div>我實測過一台，重點都在這支影片 → <span class="lnk">開箱影片</span></div></div></div><span class="lbl">示意</span></div>`,
+ other:`<div class="frame cover"><img src="img/shoot-interview.webp" alt="訪談式影片" loading="lazy"><span class="lbl">訪談式影片</span><span class="play"></span></div>`,
+ event:`<div class="frame cover"><img src="img/event1.webp" alt="產品體驗會" loading="lazy"><span class="lbl">產品體驗會</span><span class="play"></span></div>`,
+ shortB:`<div class="frame"><img src="img/long-short.webp" alt="加送的精華短片" loading="lazy"><span class="lbl">加送短片</span></div>`,
+ shop:`<div class="frame"><img src="img/shopping.webp" alt="YouTube Shopping" loading="lazy"><span class="lbl">YouTube Shopping</span></div>`,
+ drama:`<div class="frame cover"><img src="img/shoot-drama.webp" alt="劇情式影片" loading="lazy"><span class="lbl">劇情式</span><span class="play"></span></div>`,
+ live:`<div class="frame cover"><img src="img/shoot-event.webp" alt="活動紀錄" loading="lazy"><span class="lbl">活動紀錄</span><span class="play"></span></div>`
+};
+
+const SVC=[
+{id:'long',m:'unbox',name:'開箱長影片',price:'30,000',unit:'未稅',card:'最完整的開箱，短片和文章一起送。',
+ tag:'最完整的開箱，短片和文章一起送。',
+ pts:['7～11 分鐘：精華 → 鋪陳 → 實測 → 總結','贈 2 個月全授權（再製・投廣・肖像・刊登）','要做競品比較 +10,000'],
+ gift:1, addon:1, ex:['long'],
+ links:[['▶ 範例長片','https://youtu.be/hNGKPri3HOQ'],['▶ 加送的短片','https://youtube.com/shorts/p06HTamQKeM'],['加送的 Blog','https://platypus.tw/acerpurev3/'],['▶ 近期：伊萊克斯咖啡機','https://youtu.be/PLxlTGDvaOw']]},
+{id:'short',m:'energy',name:'情境短影音',price:'15,000',unit:'未稅',card:'60～90 秒，直接打痛點。',
+ tag:'60～90 秒，直接打痛點。',
+ pts:['情境切入，不拖前搖','上架 YouTube・Facebook・Instagram・Threads','贈 2 個月全授權'],
+ ex:['short'],
+ links:[['▶ 範例短片','https://youtube.com/shorts/TEo403C7jw4'],['▶ 劇情短片 84 萬觀看','https://youtube.com/shorts/RZaSmcoeZ7A']]},
+{id:'blog',m:'note',name:'部落格文章',price:'8,000',unit:'未稅',card:'文字留得久，Google 和 AI 都找得到你。',
+ tag:'文字留得久，Google 和 AI 都找得到你。',
+ pts:['詳盡圖文，加導購按鈕','上架 Blog・Facebook','贈 2 個月全授權'],
+ ex:['blog'],
+ links:[['飛利浦氣炸鍋文章','https://platypus.tw/philips-air-fryer-2025/'],['Acerpure 潔吸塔文章','https://platypus.tw/acerpurev3/']]},
+{id:'ai',m:'idea',name:'AI 影片',isNew:1,price:'5,000',unit:'起・未稅',card:'AI 短影音時代，用 AI 搶眼球。',
+ tag:'AI 短影音時代，用 AI 搶眼球。',
+ tiers:[['精緻劇情','15,000','直式 60 秒，含腳本・角色設計・影片製作'],['簡單暴力','5,000','不拘細節，快速出片']],
+ ex:['ai']},
+{id:'patrol',m:'tablet',name:'海巡服務',isNew:1,price:'洽詢',unit:'',card:'別人在問，你就出現。',
+ tag:'別人在問，你就出現。',
+ pts:['每天巡 Threads＋指定網站','遇到相關提問，貼上產品介紹＋開箱影片','回覆重點可以由你指定'],
+ ex:['patrol']},
+{id:'other',m:'trust',name:'客製影片拍攝',price:'20,000',unit:'起・未稅',card:'訪談、劇情、活動紀錄，想拍什麼都行。',
+ tag:'訪談、劇情、活動紀錄，想拍什麼都行。',
+ table:[['出機拍攝','20,000 起'],['腳本','5,000 起'],['一拍多版本','每版 5,000 起']],
+ pts:['授權完整歸廠商'],
+ ex:['other'],
+ links:[['▶ 劇情短片 84 萬觀看','https://youtube.com/shorts/RZaSmcoeZ7A']]},
+{id:'event',m:'hooray',name:'產品體驗會',price:'30,000',unit:'起・未稅',card:'讓真實體驗者幫你說好話。',go:'#event'}
+];
+
+document.getElementById('plancards').innerHTML=SVC.map(s=>`<a class="plan${s.id==='long'?' hot':''}" href="${s.go||'#plans'}" data-go="${s.id}"><img class="pm" src="img/m/${s.m}.webp" alt="">${s.id==='long'?'<span class="ribbon">主打｜短片＋Blog 免費送</span>':''}${F[s.id]}<div class="row"><h3>${esc(s.name)}${s.isNew?'<span class="new">新</span>':''}</h3><span class="p">${esc(s.price)}<small>${esc(s.unit)}</small></span></div><p>${esc(s.card)}</p></a>`).join('');
+
+const GIFT=`<div class="gift"><img class="gm" src="img/m/gift.webp" alt=""><div class="gh">付一支的錢，<em>多拿兩樣</em></div>
+<div class="gg"><div class="gi paid"><span class="gt">你付費</span><b>開箱長片</b><small>YouTube・Facebook</small></div><div class="plus">＋</div>
+<div class="gi"><span class="gt">免費送</span><b>精華短片</b><small>YouTube Shorts・FB・IG・Threads</small></div><div class="plus">＋</div>
+<div class="gi"><span class="gt">免費送</span><b>SEO 部落格</b><small>platypus.tw＋導購按鈕</small></div></div>
+<p class="gn">＝ 7 個曝光，全部包含在 30,000 內</p></div>`;
+const ADDON=`<div class="addon"><img class="am" src="img/m/hi.webp" alt=""><h3>加購：多國語言版本<span class="new"><span class="yr">2027</span> 新</span></h3>
+<p style="margin:8px 0 0">做好的開箱長片，口白・字幕・字卡全部換成外語，直接進海外市場。</p>
+<table style="margin-top:8px"><tbody><tr><td>第 1 種語言</td><td class="r">3,000</td></tr><tr><td>每多 1 種語言</td><td class="r">+1,000</td></tr><tr><td><b>買斷永久授權</b></td><td class="r"><b>送 2 種語言</b></td></tr></tbody></table>
+<div style="margin-top:12px">${F.lang}</div></div>`;
+
+document.getElementById('svclist').innerHTML=SVC.filter(s=>!s.go).map(s=>`<article class="svc" id="svc-${s.id}"><div>
+<div class="sh"><img src="img/m/${s.m}.webp" alt=""><h2>${esc(s.name)}${s.isNew?'<span class="new">'+YEAR+' 新</span>':''}</h2></div>
+<div class="price">${esc(s.price)}<small>${esc(s.unit)}</small></div>
+<p class="tagline">${esc(s.tag)}</p>
+${s.tiers?`<div class="tiers">${s.tiers.map(([a,b,c])=>`<div>${esc(a)}<b>${esc(b)}</b><span style="color:var(--mute);font-size:15px">${esc(c)}</span></div>`).join('')}</div>`:''}
+${s.table?`<table style="margin-top:12px"><tbody>${s.table.map(([a,b])=>`<tr><td>${esc(a)}</td><td class="r">${esc(b)}</td></tr>`).join('')}</tbody></table>`:''}
+${s.pts?`<ul class="pts">${s.pts.map(p=>`<li>${esc(p)}</li>`).join('')}</ul>`:''}
+${s.gift?GIFT:''}${s.addon?ADDON:''}
+</div><div>${F[s.ex[0]]}
+${s.links?`<div class="links">${s.links.map(([t,u])=>`<a href="${esc(u)}" target="_blank" rel="noopener">${esc(t)}</a>`).join('')}</div>`:''}
+${s.ex.some(k=>['ai','patrol'].includes(k))?'<p class="note">示意畫面；實際範例製作中。</p>':''}</div></article>`).join('');
+
+const LIC=[['開箱長片',[['1 個月','5,000'],['3 個月','10,000'],['6 個月','18,000'],['永久','50,000'],['上片前買斷永久','25,000','50,000']],'買斷永久授權，送 2 種語言版本'],
+['短片',[['1 個月','2,000'],['3 個月','4,000'],['6 個月','7,000'],['永久','20,000'],['上片前買斷永久','10,000','20,000']],''],
+['部落格文章',[['1 個月','1,000'],['3 個月','2,000'],['6 個月','3,500'],['永久','8,000'],['發布前買斷永久','4,000','8,000']],'']];
+document.getElementById('lic').innerHTML=LIC.map(([n,rows,x])=>`<div><h3>${n}</h3><table><thead><tr><th>授權時間</th><th class="r">未稅</th></tr></thead><tbody>${rows.map(r=>`<tr><td>${r[0]}</td><td class="r">${r[2]?`<span class="strike">${r[2]}</span><b>${r[1]}</b>`:r[1]}</td></tr>`).join('')}</tbody></table>${x?`<p class="note"><b>${x}</b></p>`:''}</div>`).join('');
+
+document.querySelectorAll('.yr').forEach(e=>e.textContent=YEAR);
+/* routing */
+const views=['home','plans','license','event','channel'];let pend=null;
+document.addEventListener('click',e=>{const a=e.target.closest('[data-go]');if(a)pend=a.dataset.go;});
+const route=()=>{let h=location.hash.slice(1);if(h==='contact'){document.getElementById('contact').scrollIntoView({behavior:'smooth'});return;}if(!views.includes(h))h='home';
+ views.forEach(v=>document.getElementById('v-'+v).classList.toggle('on',v===h));
+ document.querySelectorAll('#tabs a').forEach(a=>a.toggleAttribute('aria-current',a.getAttribute('href')==='#'+h));
+ const el=pend&&h==='plans'&&document.getElementById('svc-'+pend);pend=null;
+ if(el)setTimeout(()=>el.scrollIntoView({behavior:'smooth'}),30);else window.scrollTo(0,0);};
+window.addEventListener('hashchange',route);route();
+
+document.getElementById('copyMail').addEventListener('click',e=>{const b=e.currentTarget;navigator.clipboard.writeText('Platypus.cousin@gmail.com').then(()=>{b.textContent='已複製';setTimeout(()=>b.textContent='複製 Email',1600)}).catch(()=>{b.textContent='Platypus.cousin@gmail.com'});});
+/* channel data */
+fetch('data.json').then(r=>r.json()).then(D=>{
+ const V=D.videos;const up=new Date(D.updated);
+ document.getElementById('updated').textContent='更新：'+up.toLocaleDateString('zh-TW',{timeZone:'Asia/Taipei'})+'・頻道數字取自 YouTube 工作室（2022/3/23 開台至 2026/11/24）';
+ const top=V.reduce((a,b)=>b.v>a.v?b:a);
+ const C=D.channel||{};document.getElementById('kpis').innerHTML=[[fmt(C.totalViews),'總累積觀看'],[fmt(C.watchHours),'總觀看時數（小時）'],[fmt(top.v),'單支最高觀看']].map(([a,b])=>`<div><b>${a}</b>${b}</div>`).join('');
+ const A=D.audience;const aud=document.getElementById('aud');
+ if(A){const hb=a=>a.map(([k,p])=>`<div class="hb"><span>${esc(k)}</span><span class="t"><i style="width:${Math.min(100,+p)}%"></i></span><span class="v">${Number(p).toFixed(1)}%</span></div>`).join('');
+  aud.innerHTML=`<p class="sub">${esc(A.period||'')}</p><div class="aud"><div><h3>性別</h3><div class="split"><span style="width:${+A.male}%;background:var(--deep)">男 ${esc(A.male)}%</span><span style="width:${+A.female}%;background:var(--brown)">女 ${esc(A.female)}%</span></div>${A.core?`<div style="margin-top:18px"><span style="color:var(--mute);font-size:14px">主力觀眾</span><b style="display:block;font-size:30px;font-weight:900;line-height:1.15">${esc(A.core[0])}</b><span style="font-weight:700;color:var(--brown)">${esc(A.core[1])}</span></div>`:''}</div><div><h3>年齡</h3>${hb(A.age||[])}</div><div><h3>${esc(A.thirdTitle||'地區')}</h3>${hb(A.third||[])}</div></div>`;}
+ else aud.innerHTML='<div class="pending">性別、年齡、地區等觀眾數據整理中。</div>';
+ let k='v',t='all';
+ const draw=()=>{const a=V.filter(v=>t==='all'||v.t===t).slice().sort((x,z)=>z[k]-x[k]);const list=a.slice(0,20);const mx=a[0]?.[k]||1;
+  document.getElementById('rk').innerHTML=list.map((v,i)=>`<a class="bar" href="${esc(yt(v.id,v.t))}" target="_blank" rel="noopener"><span class="no">${i+1}</span><span><span class="tt"><span class="badge ${v.t==='S'?'s':''}">${v.t==='S'?'短片':'長片'}</span>${esc(v.n)}</span><span class="track"><i style="width:${Math.max(1,v[k]/mx*100)}%"></i></span></span><span class="num">${fmt(v[k])}<small>${k==='v'?'次觀看・'+fmt(v.l)+' 讚':'讚・'+fmt(v.v)+' 次觀看'}</small></span></a>`).join('');
+};
+ const seg=(id,fn)=>{const s=document.getElementById(id);s.addEventListener('click',e=>{const b=e.target.closest('button');if(!b)return;s.querySelectorAll('button').forEach(x=>x.setAttribute('aria-pressed',x===b));fn(b.dataset.k);draw();});};
+ seg('kSeg',x=>k=x);seg('tSeg',x=>t=x);
+ draw();
+}).catch(()=>{document.getElementById('updated').textContent='資料暫時無法載入';});
+}
+</script>
+</body>
+</html>
